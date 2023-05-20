@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {  calculateWinner } from '../helpers';
 import Board from './Board';
-import Square from "./Square";
 
 const styles = {
     width: '200px',
@@ -42,7 +41,7 @@ const Game = () => {
                 </li>
             )
         });
-        
+
     return (
         <>
             <Board squares={history[stepNumber]} onClick={handleClick} />
